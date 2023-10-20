@@ -17,6 +17,15 @@ QLabel {
     border-color: rgb(0, 0, 0, .2);
 }
 
+QTextBrowser {
+    border-radius: 5;
+    background-color: #FD9D5D;
+    border-style:solid;
+    border-width: 0px 1px 1px px;
+    border-color: rgb(0, 0, 0, .2);
+    margin-left: 10;
+}
+
 #btnTam {
     background-color: #FEF1C9;
 }
@@ -63,15 +72,6 @@ QLabel {
 }
 
 /* Ventana Tamaño*/
-
-#pregTam {
-    background-color: #FEDECA;
-    border-radius: 10;
-}
-
-#boxTam {
-    border-radius: 10;
-}
 
 #aceptar:hover {
     background-color: black;

@@ -13,7 +13,13 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FEF1C9</string>
+  </property>
   <widget class="QComboBox" name="boxTam">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -21,6 +27,17 @@
      <width>261</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: black;
+background-color: white;
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
    </property>
   </widget>
   <widget class="QPushButton" name="aceptar">
@@ -31,6 +48,13 @@
      <width>30</width>
      <height>30</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+border-radius: 10</string>
    </property>
    <property name="text">
     <string/>
@@ -49,6 +73,10 @@
      <height>37</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #FBDA76;
+border-radius: 10;</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -64,6 +92,10 @@
      <width>261</width>
      <height>27</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #FFEBAE;
+border-radius: 10;</string>
    </property>
    <property name="text">
     <string/>

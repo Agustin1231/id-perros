@@ -15,11 +15,20 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(384, 300)
+        Form.setStyleSheet("background-color: #FEF1C9")
         self.boxTam = QtWidgets.QComboBox(Form)
+        self.boxTam.setEnabled(True)
         self.boxTam.setGeometry(QtCore.QRect(60, 170, 261, 22))
+        self.boxTam.setAutoFillBackground(False)
+        self.boxTam.setStyleSheet("color: black;\n"
+"background-color: white;\n"
+"")
         self.boxTam.setObjectName("boxTam")
         self.aceptar = QtWidgets.QPushButton(Form)
         self.aceptar.setGeometry(QtCore.QRect(177, 210, 30, 30))
+        self.aceptar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.aceptar.setStyleSheet("background-color: white;\n"
+"border-radius: 10")
         self.aceptar.setText("")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("source/check.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -27,28 +36,23 @@ class Ui_Form(object):
         self.aceptar.setObjectName("aceptar")
         self.tituloTam = QtWidgets.QLabel(Form)
         self.tituloTam.setGeometry(QtCore.QRect(60, 40, 261, 37))
+        self.tituloTam.setStyleSheet("background-color: #FBDA76;\n"
+"border-radius: 10;")
         self.tituloTam.setText("")
         self.tituloTam.setAlignment(QtCore.Qt.AlignCenter)
         self.tituloTam.setObjectName("tituloTam")
         self.pregTam = QtWidgets.QLabel(Form)
         self.pregTam.setGeometry(QtCore.QRect(60, 120, 261, 27))
+        self.pregTam.setStyleSheet("background-color: #FFEBAE;\n"
+"border-radius: 10;")
         self.pregTam.setText("")
         self.pregTam.setAlignment(QtCore.Qt.AlignCenter)
         self.pregTam.setObjectName("pregTam")
 
         self.retranslateUi(Form)
+        self.boxTam.setCurrentIndex(-1)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Form = QtWidgets.QWidget()
-    ui = Ui_Form()
-    ui.setupUi(Form)
-    Form.show()
-    sys.exit(app.exec_())
