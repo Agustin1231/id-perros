@@ -1,0 +1,78 @@
+QMainWindow{
+    background-color: #FFF4F0;
+}
+
+QPushButton {
+    border-radius: 15;
+    border-style:solid;
+    border-width: 0px 1px 1px 0px;
+    border-color: rgb(252, 127, 43, .6);
+}
+
+QLabel {
+    border-radius: 15;
+    background-color: #FD9D5D;
+    border-style:solid;
+    border-width: 0px 1px 1px px;
+    border-color: rgb(0, 0, 0, .2);
+}
+
+#btnTam {
+    background-color: #FEF1C9;
+}
+
+#btnActividad {
+    background-color: #DDF0FD;
+}
+
+#btnCaracter {
+    background-color: #FEDECA;
+}
+
+#btnClima {
+    background-color: #E1F5C3;
+}
+
+#btnCompatibilidad {
+    background-color: #FFF4F0;
+    border-radius: 12;
+}
+
+#btnTam:hover {
+    background-color: #FBDA76;
+}
+
+#btnActividad:hover {
+    background-color: #41AEF9;
+}
+
+#btnCaracter:hover {
+    background-color: #FFBB90;
+}
+
+#btnClima:hover {
+    background-color: #C4FD6F;
+}
+
+#titulo {
+    font-size: 16px;
+}
+
+#tituloCompatibilidad {
+    font-size: 9.89px;
+}
+
+/* Ventana Tamaño*/
+
+#pregTam {
+    background-color: #FEDECA;
+    border-radius: 10;
+}
+
+#boxTam {
+    border-radius: 10;
+}
+
+#aceptar:hover {
+    background-color: black;
+}
